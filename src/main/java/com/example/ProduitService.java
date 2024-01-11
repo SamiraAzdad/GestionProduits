@@ -77,6 +77,6 @@ public Produit ReadProduit(Long id) {
             throw new IllegalArgumentException("Le produit à supprimer n'existe pas.");
         }
     }
-*/
+
 	
 }
