@@ -6,7 +6,7 @@ import java.util.List;
 public class ProduitService 
 {
 	
-	/*
+	
 private List<Produit> produits = new ArrayList<>();
 //ajout
 public void ajouterProduit(Produit produit) {
@@ -66,7 +66,7 @@ public Produit ReadProduit(Long id) {
             throw new IllegalArgumentException("produit à modifier n'existe pas: " + produit.getId());
         }
     }
-    
+    /*
  // delete  
     public void supprimerProduitParId(Long id) {
         // Vérification d'existence du produit
