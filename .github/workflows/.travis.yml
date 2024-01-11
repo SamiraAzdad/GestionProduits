@@ -3,11 +3,8 @@ on:
   push:
     branches:
       
-<<<<<<< HEAD
 master
-=======
 main
->>>>>>> d26457f (Create .travis.yml)
 
 jobs:
   build:
@@ -49,6 +46,7 @@ name: Checkout Repository
 
       
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 name: Deploy to Maven Repository
@@ -68,6 +66,9 @@ name: Checkout Repository
 
       
 >>>>>>> d26457f (Create .travis.yml)
+=======
+
+>>>>>>> fcc0b76 (Update .travis.yml)
 name: Set Artifact Version
       run: |
         ARTIFACT_VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
