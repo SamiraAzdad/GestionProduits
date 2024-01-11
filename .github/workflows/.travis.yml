@@ -3,7 +3,11 @@ on:
   push:
     branches:
       
+<<<<<<< HEAD
 master
+=======
+main
+>>>>>>> d26457f (Create .travis.yml)
 
 jobs:
   build:
@@ -44,7 +48,26 @@ name: Checkout Repository
       uses: actions/checkout@v2
 
       
+<<<<<<< HEAD
 
+=======
+name: Deploy to Maven Repository
+      run: |
+        mvn clean install
+        mvn deploy -DskipTests
+      env:
+        ARTIFACT_VERSION: ${{ needs.build.outputs.ARTIFACT_VERSION }} # Corrected syntax
+
+  release:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      
+name: Checkout Repository
+      uses: actions/checkout@v2
+
+      
+>>>>>>> d26457f (Create .travis.yml)
 name: Set Artifact Version
       run: |
         ARTIFACT_VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
