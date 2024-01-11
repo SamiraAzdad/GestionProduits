@@ -66,7 +66,7 @@ public Produit ReadProduit(Long id) {
             throw new IllegalArgumentException("produit à modifier n'existe pas: " + produit.getId());
         }
     }
-    
+    /*
  // delete  
     public void supprimerProduitParId(Long id) {
         // Vérification d'existence du produit
