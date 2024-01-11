@@ -6,7 +6,7 @@ import java.util.List;
 public class ProduitService 
 {
 	
-	/*
+	
 private List<Produit> produits = new ArrayList<>();
 //ajout
 public void ajouterProduit(Produit produit) {
@@ -39,7 +39,7 @@ public boolean estDonneesValides(double prix, int quantite) {
     return prix >= 0 && quantite >= 0;
 }
 		
-
+/*
 // read  
 public Produit ReadProduit(Long id) {
     for (Produit produit : produits) {
