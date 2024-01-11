@@ -51,7 +51,7 @@ public Produit ReadProduit(Long id) {
     // Gestion d'exception : Le produit n'existe pas
     throw new IllegalArgumentException("Le produit avec l'ID " + id + " n'existe pas.");
 }
-
+/*
 // update   
     public void updateProduit(final Produit produit) {
     	
