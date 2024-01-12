@@ -45,10 +45,6 @@ name: Checkout Repository
       uses: actions/checkout@v2
 
       
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 name: Deploy to Maven Repository
       run: |
         mvn clean install
@@ -65,10 +61,6 @@ name: Checkout Repository
       uses: actions/checkout@v2
 
       
->>>>>>> d26457f (Create .travis.yml)
-=======
-
->>>>>>> fcc0b76 (Update .travis.yml)
 name: Set Artifact Version
       run: |
         ARTIFACT_VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
